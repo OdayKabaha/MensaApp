@@ -1,6 +1,6 @@
 package com.example.odayk.mensaapp;
 
-
+// Hallo martin
 import android.graphics.Color;
 import android.renderscript.Sampler;
 import android.support.v7.app.AppCompatActivity;
