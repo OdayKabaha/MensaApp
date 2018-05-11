@@ -6,26 +6,104 @@
     android:layout_height="match_parent"
     tools:context=".SpeisePlan">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp"
-        android:gravity="center"
-        android:text="Speiseplan"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="266dp" />
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/background2" />
 
     <Button
-        android:id="@+id/btnGraph"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/menu"
+        android:layout_width="87dp"
+        android:layout_height="86dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="248dp"
-        android:text="Button" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/menu"
+        android:contentDescription="@string/desc" />
+
+    <Button
+        android:id="@+id/filter"
+        android:layout_width="87dp"
+        android:layout_height="86dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/menu"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/Filter"
+        android:contentDescription="@string/desc" />
+
+    <Button
+        android:id="@+id/Mo"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/MO"
+        android:contentDescription="@string/desc" />
+
+    <Button
+        android:id="@+id/Di"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_alignTop="@+id/Mo"
+        android:layout_toEndOf="@+id/Mo"
+        android:background="@drawable/Di"
+        android:contentDescription="@string/desc" />
+
+    <Button
+        android:id="@+id/Mi"
+        android:layout_width="67dp"
+        android:layout_height="65dp"
+        android:layout_alignBottom="@+id/Mo"
+        android:layout_toEndOf="@+id/Di"
+        android:background="@drawable/Mi"
+        android:contentDescription="@string/desc" />
+
+    <Button
+        android:id="@+id/Do"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_alignTop="@+id/Mo"
+        android:layout_toEndOf="@+id/Mi"
+        android:background="@drawable/Do"
+        android:contentDescription="@string/desc" />
+
+    <Button
+        android:id="@+id/Fr"
+        android:layout_width="66dp"
+        android:layout_height="67dp"
+        android:layout_alignTop="@+id/Mo"
+        android:layout_toEndOf="@+id/Do"
+        android:background="@drawable/Fr"
+        android:contentDescription="@string/desc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="480sp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Speiseplan"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
 </RelativeLayout>
